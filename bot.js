@@ -18,7 +18,7 @@ client.on('ready', () => {
 
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setGame(`( ! ) , Akon Beta V 1.0.0`,"http://twitch.tv/S-F")
+client.user.setGame(`Dragon ✨ | !help`,"http://twitch.tv/S-F")
 
 client.user.setStatus("dnd")
 
@@ -30,10 +30,10 @@ client.on('message', message => {
    let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setThumbnail(message.author.avatarURL)
-  .addField("Name:",`${message.author.username}`, true)
-  .addField('Discrim:',"#" +  message.author.discriminator, true)
-  .addField("ID:", message.author.id, true)
-  .addField("Create At:", message.author.createdAt, true)
+  .addField("Name :",`${message.author.username}`, true)
+  .addField('Tag :',"#" +  message.author.discriminator, true)
+  .addField("ID :", message.author.id, true)
+  .addField("Create At :", message.author.createdAt, true)
      
      
   message.channel.sendEmbed(embed);
